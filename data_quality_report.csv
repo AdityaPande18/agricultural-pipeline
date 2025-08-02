@@ -1,6 +1,6 @@
 === SCHEMA VALIDATION: MISSING VALUES ===
 total,missing_sensor_id,missing_timestamp,missing_reading_type,missing_value,missing_battery_level
-30,0,0,0,0,0
+90,0,0,0,0,0
 
 
 === SCHEMA VALIDATION: TYPE CHECKS ===
@@ -9,22 +9,22 @@ All column types match expected schema.
 
 === VALUE RANGE CHECKS ===
 reading_type,total,out_of_range
-temperature,17,0.0
-humidity,13,0.0
+temperature,51,0.0
+humidity,39,0.0
 soil_moisture,0,
 light_intensity,0,
 
 
 === TIME GAPS ===
 sensor_id,observed_hours,expected_hours,percent_missing_hours
-sensor_1,3,3,0.0
-sensor_3,2,2,0.0
-sensor_2,4,4,0.0
-sensor_4,3,3,0.0
-sensor_5,3,3,0.0
+sensor_1,9,51,82.35
+sensor_3,6,50,88.0
+sensor_2,12,52,76.92
+sensor_4,9,51,82.35
+sensor_5,9,51,82.35
 
 
 === ANOMALY PROFILE ===
 reading_type,total_readings,anomalies,percent_anomalous
-temperature,17,0.0,0.0
-humidity,13,0.0,0.0
+temperature,51,0.0,0.0
+humidity,39,0.0,0.0
