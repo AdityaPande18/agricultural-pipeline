@@ -20,15 +20,6 @@ class AgriculturalMonitoringPipeline:
             logging.info("-----------------------------\n\n")
 
             if not df.empty:
-                print()
-                print()
-                print()
-                print()
-                print(df.to_csv(index=False))
-                print()
-                print()
-                print()
-                print()
                 logging.info("-----------------------------")
                 transformer = TransformationHandler()
                 transformed_df = transformer.transform(df)
