@@ -1,0 +1,20 @@
+version: "3"
+services:
+  pipeline:
+    build: .
+    volumes:
+      - .:/app
+
+  tests:
+    build: .
+    volumes:
+      - .:/app
+    command: pytest tests/
+
+  test_coverage:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: >
+      pytest --cov=src --cov-report=term-missing tests/
