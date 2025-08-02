@@ -1,5 +1,7 @@
 # Agricultural Monitoring Data Pipeline
 
+**[Click to view working video](https://drive.google.com/file/d/1abcXYZ789def/view?usp=sharing)**
+
 ## How to Run
 
 This project has been dockerized.
